@@ -25,8 +25,7 @@ SECRET_KEY = 'v0nczs!+q2y*k%995wq!nth&s!&-l9!zh951j3l4521rc+b-gi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["localhost"]
 
 # Application definition
 
@@ -55,7 +54,7 @@ ROOT_URLCONF = 'giftmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'giftmanager', "giftmanager", "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
