@@ -13,3 +13,4 @@ class Names(TemplateView):
 
     def get_context_data(self, **kwargs):
         return {"object":Person.objects.all()}
+
