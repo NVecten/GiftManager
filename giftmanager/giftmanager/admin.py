@@ -3,3 +3,4 @@ from .models import Person, Gift, GiftToPerson
 
 admin.site.register(Person)
 admin.site.register(Gift)
+admin.site.register(GiftToPerson)
