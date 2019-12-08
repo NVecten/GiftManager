@@ -19,5 +19,6 @@ from .giftmanager import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.Index.as_view()),
+    path('', views.Index.as_view(),name="index"),
+    path('names/', views.Names.as_view(),name="names"),
 ]
