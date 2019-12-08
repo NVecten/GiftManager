@@ -14,20 +14,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-">
-    <h1>Gift Manager</h1>
-    <ul>
-        <li><a href="{%url "index"%}">Přehled</a></li>
-        <li><a href="{%url "names"%}">Jména</a></li>
-        <li><a href="gifts.html">Dárky</a></li>
-    </ul>
-    <!--tady bude přehled buď v tabulce nebo jako fotka (avatar) a pod ním jméno a dárky, které pro osobu máme-->
-    {{ahoj.name}}
-    </div>
-    </div>
-    </div>
-    </body>
+    <header>
+        <h1>Gift Manager</h1>
+        <p></p>
+    </header>
+    <section>
+            <ul>
+                    <li><a href="{%url "index"%}">Přehled</a></li>
+                    <li><a href="{%url "names"%}">Jména</a></li>
+                </ul>
+
+                <h2>Přehled</h2>
+                
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Jméno</th>
+                            <th scope="col">Počet dárků</th>
+                            <th scope="col">Částka</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{ahoj.name}}</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+    </section>
+</body>
 
 </html>

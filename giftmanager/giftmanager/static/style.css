@@ -1,5 +1,22 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    background-color: rgb(220, 243, 220);
     
+}
+
+header {
+    background-image: url(christmas_trees_background_page.png);
+    padding: 40px;
+}
+
+h1 {
+    
+}
+
+table {
+    background-color: white;
+}
+
+section {
+    padding: 20px;
 }
